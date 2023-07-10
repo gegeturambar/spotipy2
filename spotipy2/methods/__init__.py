@@ -1,6 +1,8 @@
 import re
 
 from .albums import AlbumMethods
+from .shows import ShowMethods
+from .episodes import EpisodeMethods
 from .artists import ArtistMethods
 from .search import SearchMethods
 from .tracks import TrackMethods
@@ -9,7 +11,7 @@ from .users import UserMethods
 
 
 class Methods(
-    AlbumMethods, ArtistMethods, SearchMethods, TrackMethods, PlaylistMethods, UserMethods
+    AlbumMethods, ArtistMethods, SearchMethods, TrackMethods, PlaylistMethods, UserMethods, EpisodeMethods, ShowMethods
 ):
     @staticmethod
     def get_id(s: str) -> str:
