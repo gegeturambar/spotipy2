@@ -6,7 +6,7 @@ from spotipy2 import types
 
 
 @dataclass
-class show(types.BaseType):
+class Show(types.BaseType):
     show_type: str
     total_tracks: int
     artists: List[types.Artist]
